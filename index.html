@@ -10,29 +10,29 @@
     <body class="bg_magenta">
         
         <div class="text-center my-4">
-            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
         </div>
         <div class="container rounded bg-white text-center py-4">
             <div class="row align-items-center">
                 <div class="col">
-                    <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-2">
                         <label for="name_surname" class="form-label fs-5 text-danger fw-semibold">Nome Cognome</label>
                         <input class="rounded" id="name_surname" type="text">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-2">
                         <label for="kms" class="form-label fs-5 text-danger fw-semibold">Km da percorrere</label>
                         <input class="rounded" id="kms" type="number">
                     </div>
                 </div>
                 <div class="col">
-                    <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-2">
                         <label for="age" class="form-label fs-5 text-danger fw-semibold">Età</label>
                         <input class="rounded" id="age" type="number">
                     </div>
                 </div>
-                <div class="col-12 mt-5 mb-4">
+                <div class="col-12 mt-5 mb-3">
                     <div class="">
                         <button class="mx-2 rounded fs-5 text-danger fw-semibold" id="submit">Genera</button> 
                         <button class="mx-2 rounded fs-5 text-danger fw-semibold" id="cancel">Annulla</button>
@@ -41,10 +41,39 @@
             </div>
         </div>
 
+        <div id="ticket" style="display: none;">
+            <div class="text-center my-4">
+                <h2>IL TUO BIGLIETTO</h2>
+            </div>
+            <div class="container rounded bg-white py-4">
+                <h5 class="fw-bold">DETTAGLIO PASSEGGERI</h5>
+                <div class="container">
+                    <div class="row border-top border-bottom py-3 text-center">
+                        <div class="col bg-secondary-subtle d-flex flex-column gap-1 pt-1">
+                            <h5>NOME PASSEGGERO</h5>
+                            <p id="traveler_name"></p>
+                        </div>
+                        <div class="col d-flex flex-column gap-4 pt-1">
+                            <h5>Distanza da percorrere</h5>
+                            <p id="travel_km"></p>
+                        </div>
+                        <div class="col d-flex flex-column gap-4 pt-1">
+                            <h5>Carrozza</h5>
+                            <p id="randomized_cart"></p>
+                        </div>
+                        <div class="col d-flex flex-column gap-4 pt-1">
+                            <h5>Sconto applicato</h5>
+                            <p id="applied_discount"></p>
+                        </div>
+                        <div class="col d-flex flex-column gap-4 pt-1">
+                            <h5>Costo biglietto</h5>
+                            <p id="total_price"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        
-        
-
         <script src="./script.js"></script>
     </body>
 </html>
