@@ -5,7 +5,9 @@ const kmPrice = 0.21;
 let totalPrice
 let discount
 
-submitBtn.addEventListener('click', function () {
+submitBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    
     ageInput = document.getElementById("age").value;
     kmInput = document.getElementById("kms").value;
     console.log (ageInput, "questa è la tua età")
